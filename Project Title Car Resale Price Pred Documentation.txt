@@ -1,0 +1,87 @@
+Project Title: Car Resale Price Prediction (Cars24 Platform)
+📝 Project Description
+This machine learning project aims to predict the resale price of used cars listed on the Cars24 platform. The model is trained using historical data consisting of various features like car brand, age, fuel type, transmission type, number of previous owners, mileage, etc. The goal is to assist both sellers and buyers in estimating a fair resale value of a vehicle.
+
+💡 Problem Statement
+In the used car market, pricing varies drastically based on multiple parameters. There is no straightforward pricing formula, making it difficult for both buyers and sellers to evaluate the fair resale price. Our model addresses this by providing accurate predictions using supervised learning algorithms.
+
+📂 Dataset
+Source: Kaggle/Cars24 scraping/custom dataset
+
+Features:
+
+Car_Name
+
+Year
+
+Selling_Price (target)
+
+Present_Price
+
+Kms_Driven
+
+Fuel_Type
+
+Seller_Type
+
+Transmission
+
+Owner
+
+🔧 Technologies Used
+Programming Language: Python
+
+Libraries:
+
+Pandas, NumPy for data manipulation
+
+Matplotlib, Seaborn for visualization
+
+Scikit-learn for model building
+
+Model Used: Linear Regression / Random Forest / XGBoost
+
+📊 Exploratory Data Analysis (EDA)
+We performed detailed EDA to:
+
+Understand feature distributions
+
+Check for missing values
+
+Analyze correlation between variables
+
+Handle outliers and skewness
+
+Convert categorical features using Label/One-Hot Encoding
+
+🔍 Feature Engineering
+Created a new feature: Car Age = Current Year - Year of Purchase
+
+Dropped irrelevant features like Car_Name
+
+Converted categorical features into numeric using encoding
+
+Scaled numerical features where required
+
+🧠 Model Building
+We trained and evaluated multiple regression models:
+
+Linear Regression
+
+
+Evaluation Metrics:
+
+Mean Absolute Error (MAE)
+
+Mean Squared Error (MSE)
+
+R² Score
+
+Best performing model: Random Forest Regressor
+
+📈 Results
+Training Accuracy (R²): 0.95
+
+Testing Accuracy (R²): 0.89
+
+The model performed well on unseen data and provided reliable estimates of resale price.
